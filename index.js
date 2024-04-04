@@ -11,7 +11,7 @@ const repoPath = process.cwd();
 // Navigate to your repository directory
 process.chdir(repoPath);
 
-// Make changes or generate new files
+// Make changes or generat`e new files
 fs.writeFileSync('daily_changes.txt', 'Some daily changes');
 
 // Add all changes
@@ -22,4 +22,4 @@ const timestamp = new Date().toISOString();
 executeCommand(`git commit -m "Daily update: ${timestamp}"`);
 
 // Push changes to the remote repository (assuming the branch is 'main')
-executeCommand('git push origin main');
+executeCommand('git push origin master');
